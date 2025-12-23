@@ -1,0 +1,81 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #fdfaf6; /* krem lembut */
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+h2 {
+  color: #8B5E3C; /* coklat tua */
+}
+
+form {
+  margin: 20px auto;
+  padding: 20px;
+  border: 2px solid #C19A6B; /* coklat susu */
+  border-radius: 10px;
+  width: 300px;
+  background-color: #fffaf0; /* ivory */
+}
+
+input, select, button {
+  width: 90%;
+  padding: 8px;
+  margin: 5px 0;
+}
+
+button {
+  background-color: #C19A6B; /* coklat susu */
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+button:hover {
+  background-color: #8B5E3C; /* coklat tua */
+}
+
+.hidden {
+  display: none;
+}
+canvas {
+  margin-top: 20px;
+  border: 1px solid #C19A6B;
+  background-color: #fffaf0;
+}
+canvas {
+  display: block;       /* bikin canvas jadi elemen blok */
+  margin: 20px auto;    /* otomatis center horizontal */
+  border: 1px solid #C19A6B;
+  background-color: #fffaf0;
+}
+/* Style untuk tabel pengeluaran */
+#tabelPengeluaran {
+  border-collapse: collapse;
+  margin: 20px auto;
+  width: 80%;
+  background-color: #fffaf0; /* ivory lembut */
+}
+
+#tabelPengeluaran th {
+  background-color: #C19A6B; /* coklat susu */
+  color: white;
+  padding: 10px;
+}
+
+#tabelPengeluaran td {
+  padding: 8px;
+  text-align: center;
+  border: 1px solid #C19A6B;
+}
+
+/* efek zebra striping */
+#tabelPengeluaran tr:nth-child(even) {
+  background-color: #f5e6d3; /* krem muda */
+}
+
+#tabelPengeluaran tr:hover {
+  background-color: #deb887; /* highlight coklat muda saat hover */
+}

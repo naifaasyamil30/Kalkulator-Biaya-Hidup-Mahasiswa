@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Keuangan Mahasiswa</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+  <!-- Page 1: Login -->
+  <section id="loginPage">
+    <h2>Login Mahasiswa</h2>
+    <form id="loginForm">
+      <label>Nama Mahasiswa:</label>
+      <input type="text" id="nama" required><br><br>
+      <label>Saldo Bulanan:</label>
+      <input type="number" id="saldo" required><br><br>
+      <button type="submit">Login</button>
+    </form>
+  </section>
+
+  <!-- Page 2: Catatan Pengeluaran -->
+  <section id="pengeluaranPage" class="hidden">
+    <h2>Catatan Pengeluaran</h2>
+    <form id="formPengeluaran">
+      <label>Kategori:</label>
+      <select id="kategori" required>
+        <option value="Makan & Minum">Makan & Minum</option>
+        <option value="Transportasi">Transportasi</option>
+        <option value="Tempat Tinggal">Tempat Tinggal</option>
+        <option value="Buku">Buku</option>
+        <option value="Internet">Internet</option>
+        <option value="Lain-lain">Lain-lain</option>
+      </select><br><br>
+      <label>Jumlah (Rp):</label>
+      <input type="number" id="jumlah" required><br><br>
+      <button type="submit">Simpan</button>
+      <button type="button" id="resetBtn">Reset</button>
+    </form>
+
+    <h3>Saldo Tersisa: Rp <span id="saldoTersisa"></span></h3>
+
+    <table id="tabelPengeluaran" border="1" style="margin:auto; width:80%;">
+      <thead>
+        <tr><th>Kategori</th><th>Jumlah (Rp)</th></tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+
+    <canvas id="chartPengeluaran" width="300" height="300"></canvas>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
